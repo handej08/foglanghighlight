@@ -1,0 +1,123 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Foglang",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#storages"
+		},
+		{
+			"include": "#entities"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.foglang",
+				"match": "\\b(naer|givet|att)\\b"
+			},
+			{
+				"name": "keyword.operator.foglang",
+				"match": "=|<|>|!"
+			},
+			{
+				"name": "storage.modifier.foglang",
+				"match": "\\b(return)\\b"
+			}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.foglang",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.format.placeholder.other.foglang",
+					"match": "%"
+				},
+				{
+                    "name": "variable.foglang",
+                    "match": "(?<=\"[^%]*([^%]*%[^%]*%[^%]*)*%)[^%]+(?=%)"
+                },
+				{
+					"name": "constant.character.escape.foglang",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.block.foglang",
+				"begin": "[^*]?#\\*",
+				"end": "\\*#"
+			},
+			{
+				"name": "comment.line.double-slash.foglang",
+				"match": "#.*"
+			}
+			
+			]
+		},
+		"storages": {
+			"patterns": [{
+				"name": "storage.type.foglang",
+				"match": "\\b(boul)\\b"
+			}
+			
+			]
+		},
+		"entities": {
+			"patterns": [{
+				"name": "entity.name.function.foglang",
+				"match": "\\b\\w+?(?=\\()"
+			},
+			{
+				"name": "entity.name.function.main.foglang",
+				"match": "\\b(main)\\b"
+			},
+			{
+				"name": "keyword.control.foglang",
+				"match": "\\b(foug|tpos|bult|band)\\b"
+			},
+			{
+				"name": "constant.language.blockid.foglang",
+				"match": "(?<=\\{)\\w(?=\\})"
+			},
+			{
+				"name": "constant.numeric.foglang",
+				"match": "\\b([\\d.]+)\\b"
+			},
+			{
+				"name": "constant.language.foglang",
+				"match": "\\b(sax|svets|slip|plank)\\b"
+			},
+			{
+				"name": "entity.name.namespace.foglang",
+				"match": "(?<=\\bbult +(sax +)?)\\w+\\b"
+			}
+			
+			]
+		},
+		"variables": {
+			"patterns": [
+			{
+                "name": "variable.parameter.foglang",
+                "match": "(?<=\\bboul (plank +)?\\w+\\(( *\\w+ *, *)*)\\w+?\\b"
+            }
+			]
+		}
+
+	},
+	"scopeName": "source.foglang"
+}

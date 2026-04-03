@@ -1,0 +1,29 @@
+{
+  "name": "foglanghighlight",
+  "displayName": "FoglangHighlight",
+  "description": "Syntax Highlight for the Foglang programming language!",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "foglang",
+      "aliases": ["Foglang", "foglang"],
+      "extensions": [".fg"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "fogicon.svg",
+        "dark": "fogicon.svg"
+      }
+    }],
+    "grammars": [{
+      "language": "foglang",
+      "scopeName": "source.foglang",
+      "path": "./syntaxes/foglang.tmLanguage.json"
+    }]
+  }
+}
