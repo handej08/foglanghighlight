@@ -104,7 +104,7 @@
 			},
 			{
 				"name": "entity.name.namespace.foglang",
-				"match": "(?<=\\bbult +(sax +)?)\\w+\\b"
+				"match": "(?<=\\bbult +(sax +)?)[\\w/.-]+\\b"
 			}
 			
 			]
