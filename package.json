@@ -1,5 +1,6 @@
 {
   "name": "foglanghighlight",
+  "repository": "https://github.com/handej08/foglanghighlight",
   "displayName": "FoglangHighlight",
   "description": "Syntax Highlight for the Foglang programming language!",
   "version": "0.0.1",
