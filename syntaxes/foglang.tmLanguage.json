@@ -29,7 +29,7 @@
 			},
 			{
 				"name": "keyword.operator.foglang",
-				"match": "=|<|>|!"
+				"match": "=|<|>|!|\\+|-|\\*|/|\\^"
 			},
 			{
 				"name": "storage.modifier.foglang",
