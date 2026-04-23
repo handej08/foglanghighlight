@@ -100,7 +100,7 @@
 			},
 			{
 				"name": "constant.language.foglang",
-				"match": "\\b(sax|svets|slip|plank|junk)\\b"
+				"match": "\\b(sax|svets|slip|plank|junk|grip)\\b"
 			},
 			{
 				"name": "entity.name.namespace.foglang",
