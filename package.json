@@ -20,11 +20,26 @@
         "light": "fogicon.svg",
         "dark": "fogicon.svg"
       }
+    },
+    {
+      "id": "foglangpkg",
+      "aliases": ["Foglang Package", "foglang package"],
+      "extensions": [".fgpkg"],
+      "configuration": "./pkg-language-configuration.json",
+      "icon": {
+        "light": "packageicon.svg",
+        "dark": "packageicon.svg"
+      }
     }],
     "grammars": [{
       "language": "foglang",
       "scopeName": "source.foglang",
       "path": "./syntaxes/foglang.tmLanguage.json"
+    },
+    {
+      "language": "foglangpkg",
+      "scopeName": "source.foglangpkg",
+      "path": "./syntaxes/foglangpkg.tmLanguage.json"
     }]
   }
 }
