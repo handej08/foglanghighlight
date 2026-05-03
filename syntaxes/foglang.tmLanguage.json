@@ -25,15 +25,19 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.foglang",
-				"match": "\\b(naer|givet|att)\\b"
+				"match": "\\b(naer|givet|att|annars)\\b"
 			},
 			{
 				"name": "keyword.operator.foglang",
 				"match": "=|<|>|!|\\+|-|\\*|/|\\^"
 			},
 			{
+				"name": "keyword.operator.foglang",
+				"match": "\\b(eller|och|inte)\\b"
+			},
+			{
 				"name": "storage.modifier.foglang",
-				"match": "\\b(return)\\b"
+				"match": "\\b(return|slut)\\b"
 			}
 			]
 		},
