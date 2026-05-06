@@ -25,7 +25,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.foglang",
-				"match": "\\b(naer|givet|att|annars)\\b"
+				"match": "\\b(naer|givet|att|annars|om)\\b"
 			},
 			{
 				"name": "keyword.operator.foglang",
@@ -104,7 +104,7 @@
 			},
 			{
 				"name": "constant.language.foglang",
-				"match": "\\b(sax|svets|slip|plank|junk|grip|dill)\\b"
+				"match": "\\b(sax|svets|slip|plank|junk|grip|dill|gung)\\b"
 			},
 			{
 				"name": "entity.name.namespace.foglang",
